@@ -1,0 +1,1771 @@
+{
+  "protocol": {
+    "D": 32,
+    "T": 16,
+    "H": 24,
+    "seeds": [
+      11,
+      29,
+      47,
+      83,
+      101
+    ],
+    "counts": [
+      1,
+      4,
+      16
+    ],
+    "snaps": [
+      16,
+      64,
+      256,
+      512
+    ],
+    "lr": 0.025,
+    "testN": 128,
+    "primary": "fixed 16 query labels, vary distinct readout functions; matched 512 presentations per label",
+    "secondary": "wrong-query shift at held-out time",
+    "limitations": "Repeated functions receive more gradient presentations of the same underlying training objects; unique training objects, per-label exposure and total updates are matched, but per-function updates are not. Toy axes orthogonal, no biological evidence, architecture-specific."
+  },
+  "rows": [
+    {
+      "seed": 11,
+      "U": 1,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.7333984375,
+          "shiftedQueryAccuracy": 0.7333984375,
+          "worst": 0.7109375
+        },
+        {
+          "n": 64,
+          "accuracy": 0.9521484375,
+          "shiftedQueryAccuracy": 0.9521484375,
+          "worst": 0.9453125
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "U": 1,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.6396484375,
+          "shiftedQueryAccuracy": 0.6396484375,
+          "worst": 0.546875
+        },
+        {
+          "n": 64,
+          "accuracy": 0.91455078125,
+          "shiftedQueryAccuracy": 0.91455078125,
+          "worst": 0.890625
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "U": 1,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.765625,
+          "shiftedQueryAccuracy": 0.765625,
+          "worst": 0.765625
+        },
+        {
+          "n": 64,
+          "accuracy": 0.921875,
+          "shiftedQueryAccuracy": 0.921875,
+          "worst": 0.921875
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "U": 4,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.56298828125,
+          "shiftedQueryAccuracy": 0.56689453125,
+          "worst": 0.484375
+        },
+        {
+          "n": 64,
+          "accuracy": 0.6669921875,
+          "shiftedQueryAccuracy": 0.6689453125,
+          "worst": 0.5625
+        },
+        {
+          "n": 256,
+          "accuracy": 0.689453125,
+          "shiftedQueryAccuracy": 0.689453125,
+          "worst": 0.6484375
+        },
+        {
+          "n": 512,
+          "accuracy": 0.68994140625,
+          "shiftedQueryAccuracy": 0.69384765625,
+          "worst": 0.6484375
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "U": 4,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.5771484375,
+          "shiftedQueryAccuracy": 0.4833984375,
+          "worst": 0.4921875
+        },
+        {
+          "n": 64,
+          "accuracy": 0.80517578125,
+          "shiftedQueryAccuracy": 0.46923828125,
+          "worst": 0.7265625
+        },
+        {
+          "n": 256,
+          "accuracy": 0.99951171875,
+          "shiftedQueryAccuracy": 0.47998046875,
+          "worst": 0.9921875
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.48046875,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "U": 4,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.736328125,
+          "shiftedQueryAccuracy": 0.439453125,
+          "worst": 0.6640625
+        },
+        {
+          "n": 64,
+          "accuracy": 0.92578125,
+          "shiftedQueryAccuracy": 0.46875,
+          "worst": 0.90625
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.48046875,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.48046875,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "U": 16,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.52001953125,
+          "shiftedQueryAccuracy": 0.52783203125,
+          "worst": 0.3984375
+        },
+        {
+          "n": 64,
+          "accuracy": 0.5625,
+          "shiftedQueryAccuracy": 0.5673828125,
+          "worst": 0.46875
+        },
+        {
+          "n": 256,
+          "accuracy": 0.57568359375,
+          "shiftedQueryAccuracy": 0.57666015625,
+          "worst": 0.5
+        },
+        {
+          "n": 512,
+          "accuracy": 0.58251953125,
+          "shiftedQueryAccuracy": 0.57958984375,
+          "worst": 0.4375
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "U": 16,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.5625,
+          "shiftedQueryAccuracy": 0.4931640625,
+          "worst": 0.4765625
+        },
+        {
+          "n": 64,
+          "accuracy": 0.7392578125,
+          "shiftedQueryAccuracy": 0.4921875,
+          "worst": 0.59375
+        },
+        {
+          "n": 256,
+          "accuracy": 0.92041015625,
+          "shiftedQueryAccuracy": 0.49755859375,
+          "worst": 0.8203125
+        },
+        {
+          "n": 512,
+          "accuracy": 0.99072265625,
+          "shiftedQueryAccuracy": 0.49072265625,
+          "worst": 0.96875
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "U": 16,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.76025390625,
+          "shiftedQueryAccuracy": 0.50927734375,
+          "worst": 0.6640625
+        },
+        {
+          "n": 64,
+          "accuracy": 0.94140625,
+          "shiftedQueryAccuracy": 0.4892578125,
+          "worst": 0.890625
+        },
+        {
+          "n": 256,
+          "accuracy": 0.99951171875,
+          "shiftedQueryAccuracy": 0.49267578125,
+          "worst": 0.9921875
+        },
+        {
+          "n": 512,
+          "accuracy": 0.99951171875,
+          "shiftedQueryAccuracy": 0.49267578125,
+          "worst": 0.9921875
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "U": 1,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.7744140625,
+          "shiftedQueryAccuracy": 0.7744140625,
+          "worst": 0.75
+        },
+        {
+          "n": 64,
+          "accuracy": 0.93994140625,
+          "shiftedQueryAccuracy": 0.93994140625,
+          "worst": 0.9296875
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "U": 1,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.642578125,
+          "shiftedQueryAccuracy": 0.642578125,
+          "worst": 0.53125
+        },
+        {
+          "n": 64,
+          "accuracy": 0.919921875,
+          "shiftedQueryAccuracy": 0.919921875,
+          "worst": 0.8984375
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "U": 1,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.78125,
+          "shiftedQueryAccuracy": 0.78125,
+          "worst": 0.78125
+        },
+        {
+          "n": 64,
+          "accuracy": 0.9375,
+          "shiftedQueryAccuracy": 0.9375,
+          "worst": 0.9375
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "U": 4,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.6005859375,
+          "shiftedQueryAccuracy": 0.599609375,
+          "worst": 0.5
+        },
+        {
+          "n": 64,
+          "accuracy": 0.65869140625,
+          "shiftedQueryAccuracy": 0.65380859375,
+          "worst": 0.5859375
+        },
+        {
+          "n": 256,
+          "accuracy": 0.6904296875,
+          "shiftedQueryAccuracy": 0.6875,
+          "worst": 0.6015625
+        },
+        {
+          "n": 512,
+          "accuracy": 0.68896484375,
+          "shiftedQueryAccuracy": 0.67529296875,
+          "worst": 0.6484375
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "U": 4,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.63134765625,
+          "shiftedQueryAccuracy": 0.50341796875,
+          "worst": 0.4921875
+        },
+        {
+          "n": 64,
+          "accuracy": 0.82421875,
+          "shiftedQueryAccuracy": 0.52734375,
+          "worst": 0.765625
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.49609375,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.49609375,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "U": 4,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.796875,
+          "shiftedQueryAccuracy": 0.5,
+          "worst": 0.765625
+        },
+        {
+          "n": 64,
+          "accuracy": 0.921875,
+          "shiftedQueryAccuracy": 0.50390625,
+          "worst": 0.890625
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.49609375,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.49609375,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "U": 16,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.53173828125,
+          "shiftedQueryAccuracy": 0.53857421875,
+          "worst": 0.3359375
+        },
+        {
+          "n": 64,
+          "accuracy": 0.5771484375,
+          "shiftedQueryAccuracy": 0.5751953125,
+          "worst": 0.4453125
+        },
+        {
+          "n": 256,
+          "accuracy": 0.591796875,
+          "shiftedQueryAccuracy": 0.59375,
+          "worst": 0.5234375
+        },
+        {
+          "n": 512,
+          "accuracy": 0.60400390625,
+          "shiftedQueryAccuracy": 0.60302734375,
+          "worst": 0.515625
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "U": 16,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.63134765625,
+          "shiftedQueryAccuracy": 0.50341796875,
+          "worst": 0.5
+        },
+        {
+          "n": 64,
+          "accuracy": 0.75634765625,
+          "shiftedQueryAccuracy": 0.51904296875,
+          "worst": 0.6640625
+        },
+        {
+          "n": 256,
+          "accuracy": 0.91748046875,
+          "shiftedQueryAccuracy": 0.51904296875,
+          "worst": 0.84375
+        },
+        {
+          "n": 512,
+          "accuracy": 0.99169921875,
+          "shiftedQueryAccuracy": 0.51513671875,
+          "worst": 0.9765625
+        }
+      ]
+    },
+    {
+      "seed": 29,
+      "U": 16,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.78271484375,
+          "shiftedQueryAccuracy": 0.52197265625,
+          "worst": 0.671875
+        },
+        {
+          "n": 64,
+          "accuracy": 0.94384765625,
+          "shiftedQueryAccuracy": 0.51318359375,
+          "worst": 0.8671875
+        },
+        {
+          "n": 256,
+          "accuracy": 0.99951171875,
+          "shiftedQueryAccuracy": 0.51611328125,
+          "worst": 0.9921875
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.5166015625,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "U": 1,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.7255859375,
+          "shiftedQueryAccuracy": 0.7255859375,
+          "worst": 0.7109375
+        },
+        {
+          "n": 64,
+          "accuracy": 0.97119140625,
+          "shiftedQueryAccuracy": 0.97119140625,
+          "worst": 0.9609375
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "U": 1,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.60986328125,
+          "shiftedQueryAccuracy": 0.60986328125,
+          "worst": 0.5
+        },
+        {
+          "n": 64,
+          "accuracy": 0.935546875,
+          "shiftedQueryAccuracy": 0.935546875,
+          "worst": 0.90625
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "U": 1,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.8359375,
+          "shiftedQueryAccuracy": 0.8359375,
+          "worst": 0.8359375
+        },
+        {
+          "n": 64,
+          "accuracy": 0.9453125,
+          "shiftedQueryAccuracy": 0.9453125,
+          "worst": 0.9453125
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "U": 4,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.6025390625,
+          "shiftedQueryAccuracy": 0.609375,
+          "worst": 0.5078125
+        },
+        {
+          "n": 64,
+          "accuracy": 0.65771484375,
+          "shiftedQueryAccuracy": 0.65966796875,
+          "worst": 0.6171875
+        },
+        {
+          "n": 256,
+          "accuracy": 0.6806640625,
+          "shiftedQueryAccuracy": 0.673828125,
+          "worst": 0.65625
+        },
+        {
+          "n": 512,
+          "accuracy": 0.67822265625,
+          "shiftedQueryAccuracy": 0.68017578125,
+          "worst": 0.6171875
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "U": 4,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.57470703125,
+          "shiftedQueryAccuracy": 0.49169921875,
+          "worst": 0.453125
+        },
+        {
+          "n": 64,
+          "accuracy": 0.8134765625,
+          "shiftedQueryAccuracy": 0.5,
+          "worst": 0.671875
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.4765625,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.4765625,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "U": 4,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.81640625,
+          "shiftedQueryAccuracy": 0.49609375,
+          "worst": 0.796875
+        },
+        {
+          "n": 64,
+          "accuracy": 0.947265625,
+          "shiftedQueryAccuracy": 0.482421875,
+          "worst": 0.9375
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.4765625,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.4765625,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "U": 16,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.54443359375,
+          "shiftedQueryAccuracy": 0.54736328125,
+          "worst": 0.3515625
+        },
+        {
+          "n": 64,
+          "accuracy": 0.55810546875,
+          "shiftedQueryAccuracy": 0.56298828125,
+          "worst": 0.46875
+        },
+        {
+          "n": 256,
+          "accuracy": 0.5615234375,
+          "shiftedQueryAccuracy": 0.5625,
+          "worst": 0.3984375
+        },
+        {
+          "n": 512,
+          "accuracy": 0.5751953125,
+          "shiftedQueryAccuracy": 0.5791015625,
+          "worst": 0.484375
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "U": 16,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.56689453125,
+          "shiftedQueryAccuracy": 0.51318359375,
+          "worst": 0.40625
+        },
+        {
+          "n": 64,
+          "accuracy": 0.72607421875,
+          "shiftedQueryAccuracy": 0.49267578125,
+          "worst": 0.640625
+        },
+        {
+          "n": 256,
+          "accuracy": 0.91943359375,
+          "shiftedQueryAccuracy": 0.48291015625,
+          "worst": 0.875
+        },
+        {
+          "n": 512,
+          "accuracy": 0.986328125,
+          "shiftedQueryAccuracy": 0.4873046875,
+          "worst": 0.96875
+        }
+      ]
+    },
+    {
+      "seed": 47,
+      "U": 16,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.76318359375,
+          "shiftedQueryAccuracy": 0.48876953125,
+          "worst": 0.640625
+        },
+        {
+          "n": 64,
+          "accuracy": 0.935546875,
+          "shiftedQueryAccuracy": 0.4921875,
+          "worst": 0.84375
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.4873046875,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.4873046875,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 83,
+      "U": 1,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.77587890625,
+          "shiftedQueryAccuracy": 0.77587890625,
+          "worst": 0.75
+        },
+        {
+          "n": 64,
+          "accuracy": 0.904296875,
+          "shiftedQueryAccuracy": 0.904296875,
+          "worst": 0.890625
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 83,
+      "U": 1,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.6572265625,
+          "shiftedQueryAccuracy": 0.6572265625,
+          "worst": 0.5546875
+        },
+        {
+          "n": 64,
+          "accuracy": 0.88037109375,
+          "shiftedQueryAccuracy": 0.88037109375,
+          "worst": 0.859375
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 83,
+      "U": 1,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.7421875,
+          "shiftedQueryAccuracy": 0.7421875,
+          "worst": 0.7421875
+        },
+        {
+          "n": 64,
+          "accuracy": 0.890625,
+          "shiftedQueryAccuracy": 0.890625,
+          "worst": 0.890625
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 83,
+      "U": 4,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.533203125,
+          "shiftedQueryAccuracy": 0.53125,
+          "worst": 0.453125
+        },
+        {
+          "n": 64,
+          "accuracy": 0.630859375,
+          "shiftedQueryAccuracy": 0.6337890625,
+          "worst": 0.5234375
+        },
+        {
+          "n": 256,
+          "accuracy": 0.66845703125,
+          "shiftedQueryAccuracy": 0.66552734375,
+          "worst": 0.578125
+        },
+        {
+          "n": 512,
+          "accuracy": 0.6689453125,
+          "shiftedQueryAccuracy": 0.6669921875,
+          "worst": 0.640625
+        }
+      ]
+    },
+    {
+      "seed": 83,
+      "U": 4,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.583984375,
+          "shiftedQueryAccuracy": 0.486328125,
+          "worst": 0.4296875
+        },
+        {
+          "n": 64,
+          "accuracy": 0.80615234375,
+          "shiftedQueryAccuracy": 0.43896484375,
+          "worst": 0.7265625
+        },
+        {
+          "n": 256,
+          "accuracy": 0.99951171875,
+          "shiftedQueryAccuracy": 0.45751953125,
+          "worst": 0.9921875
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.45703125,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 83,
+      "U": 4,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.767578125,
+          "shiftedQueryAccuracy": 0.451171875,
+          "worst": 0.734375
+        },
+        {
+          "n": 64,
+          "accuracy": 0.9375,
+          "shiftedQueryAccuracy": 0.45703125,
+          "worst": 0.890625
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.45703125,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.45703125,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 83,
+      "U": 16,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.52197265625,
+          "shiftedQueryAccuracy": 0.51513671875,
+          "worst": 0.359375
+        },
+        {
+          "n": 64,
+          "accuracy": 0.5419921875,
+          "shiftedQueryAccuracy": 0.5322265625,
+          "worst": 0.4453125
+        },
+        {
+          "n": 256,
+          "accuracy": 0.5732421875,
+          "shiftedQueryAccuracy": 0.5673828125,
+          "worst": 0.4375
+        },
+        {
+          "n": 512,
+          "accuracy": 0.58447265625,
+          "shiftedQueryAccuracy": 0.58154296875,
+          "worst": 0.4921875
+        }
+      ]
+    },
+    {
+      "seed": 83,
+      "U": 16,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.5947265625,
+          "shiftedQueryAccuracy": 0.4658203125,
+          "worst": 0.421875
+        },
+        {
+          "n": 64,
+          "accuracy": 0.74072265625,
+          "shiftedQueryAccuracy": 0.46533203125,
+          "worst": 0.625
+        },
+        {
+          "n": 256,
+          "accuracy": 0.92041015625,
+          "shiftedQueryAccuracy": 0.49658203125,
+          "worst": 0.84375
+        },
+        {
+          "n": 512,
+          "accuracy": 0.99072265625,
+          "shiftedQueryAccuracy": 0.48779296875,
+          "worst": 0.953125
+        }
+      ]
+    },
+    {
+      "seed": 83,
+      "U": 16,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.76220703125,
+          "shiftedQueryAccuracy": 0.48583984375,
+          "worst": 0.7109375
+        },
+        {
+          "n": 64,
+          "accuracy": 0.9462890625,
+          "shiftedQueryAccuracy": 0.4951171875,
+          "worst": 0.890625
+        },
+        {
+          "n": 256,
+          "accuracy": 0.99951171875,
+          "shiftedQueryAccuracy": 0.48779296875,
+          "worst": 0.9921875
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.48828125,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "U": 1,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.7626953125,
+          "shiftedQueryAccuracy": 0.7626953125,
+          "worst": 0.734375
+        },
+        {
+          "n": 64,
+          "accuracy": 0.9443359375,
+          "shiftedQueryAccuracy": 0.9443359375,
+          "worst": 0.9296875
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "U": 1,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.6044921875,
+          "shiftedQueryAccuracy": 0.6044921875,
+          "worst": 0.5078125
+        },
+        {
+          "n": 64,
+          "accuracy": 0.890625,
+          "shiftedQueryAccuracy": 0.890625,
+          "worst": 0.8671875
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "U": 1,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.71875,
+          "shiftedQueryAccuracy": 0.71875,
+          "worst": 0.71875
+        },
+        {
+          "n": 64,
+          "accuracy": 0.875,
+          "shiftedQueryAccuracy": 0.875,
+          "worst": 0.875
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 1,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "U": 4,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.59814453125,
+          "shiftedQueryAccuracy": 0.59326171875,
+          "worst": 0.5234375
+        },
+        {
+          "n": 64,
+          "accuracy": 0.67138671875,
+          "shiftedQueryAccuracy": 0.66748046875,
+          "worst": 0.6171875
+        },
+        {
+          "n": 256,
+          "accuracy": 0.69970703125,
+          "shiftedQueryAccuracy": 0.69873046875,
+          "worst": 0.625
+        },
+        {
+          "n": 512,
+          "accuracy": 0.70166015625,
+          "shiftedQueryAccuracy": 0.70166015625,
+          "worst": 0.671875
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "U": 4,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.61669921875,
+          "shiftedQueryAccuracy": 0.50634765625,
+          "worst": 0.453125
+        },
+        {
+          "n": 64,
+          "accuracy": 0.83056640625,
+          "shiftedQueryAccuracy": 0.49658203125,
+          "worst": 0.7265625
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.52734375,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.52734375,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "U": 4,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.77734375,
+          "shiftedQueryAccuracy": 0.49609375,
+          "worst": 0.71875
+        },
+        {
+          "n": 64,
+          "accuracy": 0.93359375,
+          "shiftedQueryAccuracy": 0.50390625,
+          "worst": 0.875
+        },
+        {
+          "n": 256,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.52734375,
+          "worst": 1
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.52734375,
+          "worst": 1
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "U": 16,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.4990234375,
+          "shiftedQueryAccuracy": 0.501953125,
+          "worst": 0.3515625
+        },
+        {
+          "n": 64,
+          "accuracy": 0.57568359375,
+          "shiftedQueryAccuracy": 0.57861328125,
+          "worst": 0.484375
+        },
+        {
+          "n": 256,
+          "accuracy": 0.5791015625,
+          "shiftedQueryAccuracy": 0.5888671875,
+          "worst": 0.484375
+        },
+        {
+          "n": 512,
+          "accuracy": 0.60205078125,
+          "shiftedQueryAccuracy": 0.59912109375,
+          "worst": 0.546875
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "U": 16,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.59619140625,
+          "shiftedQueryAccuracy": 0.53662109375,
+          "worst": 0.4140625
+        },
+        {
+          "n": 64,
+          "accuracy": 0.73583984375,
+          "shiftedQueryAccuracy": 0.52490234375,
+          "worst": 0.625
+        },
+        {
+          "n": 256,
+          "accuracy": 0.904296875,
+          "shiftedQueryAccuracy": 0.5029296875,
+          "worst": 0.765625
+        },
+        {
+          "n": 512,
+          "accuracy": 0.97900390625,
+          "shiftedQueryAccuracy": 0.51025390625,
+          "worst": 0.953125
+        }
+      ]
+    },
+    {
+      "seed": 101,
+      "U": 16,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "accuracy": 0.77490234375,
+          "shiftedQueryAccuracy": 0.50732421875,
+          "worst": 0.6484375
+        },
+        {
+          "n": 64,
+          "accuracy": 0.93994140625,
+          "shiftedQueryAccuracy": 0.50537109375,
+          "worst": 0.875
+        },
+        {
+          "n": 256,
+          "accuracy": 0.9990234375,
+          "shiftedQueryAccuracy": 0.5087890625,
+          "worst": 0.9921875
+        },
+        {
+          "n": 512,
+          "accuracy": 1,
+          "shiftedQueryAccuracy": 0.509765625,
+          "worst": 1
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "U": 1,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "mean": 0.75439453125,
+          "shifted": 0.75439453125,
+          "worst": 0.73125,
+          "minSeed": 0.7255859375,
+          "maxSeed": 0.77587890625
+        },
+        {
+          "n": 64,
+          "mean": 0.9423828125,
+          "shifted": 0.9423828125,
+          "worst": 0.93125,
+          "minSeed": 0.904296875,
+          "maxSeed": 0.97119140625
+        },
+        {
+          "n": 256,
+          "mean": 1,
+          "shifted": 1,
+          "worst": 1,
+          "minSeed": 1,
+          "maxSeed": 1
+        },
+        {
+          "n": 512,
+          "mean": 1,
+          "shifted": 1,
+          "worst": 1,
+          "minSeed": 1,
+          "maxSeed": 1
+        }
+      ]
+    },
+    {
+      "U": 1,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "mean": 0.63076171875,
+          "shifted": 0.63076171875,
+          "worst": 0.528125,
+          "minSeed": 0.6044921875,
+          "maxSeed": 0.6572265625
+        },
+        {
+          "n": 64,
+          "mean": 0.908203125,
+          "shifted": 0.908203125,
+          "worst": 0.884375,
+          "minSeed": 0.88037109375,
+          "maxSeed": 0.935546875
+        },
+        {
+          "n": 256,
+          "mean": 1,
+          "shifted": 1,
+          "worst": 1,
+          "minSeed": 1,
+          "maxSeed": 1
+        },
+        {
+          "n": 512,
+          "mean": 1,
+          "shifted": 1,
+          "worst": 1,
+          "minSeed": 1,
+          "maxSeed": 1
+        }
+      ]
+    },
+    {
+      "U": 1,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "mean": 0.76875,
+          "shifted": 0.76875,
+          "worst": 0.76875,
+          "minSeed": 0.71875,
+          "maxSeed": 0.8359375
+        },
+        {
+          "n": 64,
+          "mean": 0.9140625,
+          "shifted": 0.9140625,
+          "worst": 0.9140625,
+          "minSeed": 0.875,
+          "maxSeed": 0.9453125
+        },
+        {
+          "n": 256,
+          "mean": 1,
+          "shifted": 1,
+          "worst": 1,
+          "minSeed": 1,
+          "maxSeed": 1
+        },
+        {
+          "n": 512,
+          "mean": 1,
+          "shifted": 1,
+          "worst": 1,
+          "minSeed": 1,
+          "maxSeed": 1
+        }
+      ]
+    },
+    {
+      "U": 4,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "mean": 0.5794921875,
+          "shifted": 0.580078125,
+          "worst": 0.49375,
+          "minSeed": 0.533203125,
+          "maxSeed": 0.6025390625
+        },
+        {
+          "n": 64,
+          "mean": 0.65712890625,
+          "shifted": 0.65673828125,
+          "worst": 0.58125,
+          "minSeed": 0.630859375,
+          "maxSeed": 0.67138671875
+        },
+        {
+          "n": 256,
+          "mean": 0.6857421875,
+          "shifted": 0.6830078125,
+          "worst": 0.621875,
+          "minSeed": 0.66845703125,
+          "maxSeed": 0.69970703125
+        },
+        {
+          "n": 512,
+          "mean": 0.685546875,
+          "shifted": 0.68359375,
+          "worst": 0.6453125,
+          "minSeed": 0.6689453125,
+          "maxSeed": 0.70166015625
+        }
+      ]
+    },
+    {
+      "U": 4,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "mean": 0.59677734375,
+          "shifted": 0.49423828125,
+          "worst": 0.4640625,
+          "minSeed": 0.57470703125,
+          "maxSeed": 0.63134765625
+        },
+        {
+          "n": 64,
+          "mean": 0.81591796875,
+          "shifted": 0.48642578125,
+          "worst": 0.7234375,
+          "minSeed": 0.80517578125,
+          "maxSeed": 0.83056640625
+        },
+        {
+          "n": 256,
+          "mean": 0.9998046875,
+          "shifted": 0.4875,
+          "worst": 0.996875,
+          "minSeed": 0.99951171875,
+          "maxSeed": 1
+        },
+        {
+          "n": 512,
+          "mean": 1,
+          "shifted": 0.4875,
+          "worst": 1,
+          "minSeed": 1,
+          "maxSeed": 1
+        }
+      ]
+    },
+    {
+      "U": 4,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "mean": 0.77890625,
+          "shifted": 0.4765625,
+          "worst": 0.7359375,
+          "minSeed": 0.736328125,
+          "maxSeed": 0.81640625
+        },
+        {
+          "n": 64,
+          "mean": 0.933203125,
+          "shifted": 0.483203125,
+          "worst": 0.9,
+          "minSeed": 0.921875,
+          "maxSeed": 0.947265625
+        },
+        {
+          "n": 256,
+          "mean": 1,
+          "shifted": 0.4875,
+          "worst": 1,
+          "minSeed": 1,
+          "maxSeed": 1
+        },
+        {
+          "n": 512,
+          "mean": 1,
+          "shifted": 0.4875,
+          "worst": 1,
+          "minSeed": 1,
+          "maxSeed": 1
+        }
+      ]
+    },
+    {
+      "U": 16,
+      "mode": "concat",
+      "curve": [
+        {
+          "n": 16,
+          "mean": 0.5234375,
+          "shifted": 0.526171875,
+          "worst": 0.359375,
+          "minSeed": 0.4990234375,
+          "maxSeed": 0.54443359375
+        },
+        {
+          "n": 64,
+          "mean": 0.5630859375,
+          "shifted": 0.56328125,
+          "worst": 0.4625,
+          "minSeed": 0.5419921875,
+          "maxSeed": 0.5771484375
+        },
+        {
+          "n": 256,
+          "mean": 0.57626953125,
+          "shifted": 0.57783203125,
+          "worst": 0.46875,
+          "minSeed": 0.5615234375,
+          "maxSeed": 0.591796875
+        },
+        {
+          "n": 512,
+          "mean": 0.5896484375,
+          "shifted": 0.5884765625,
+          "worst": 0.4953125,
+          "minSeed": 0.5751953125,
+          "maxSeed": 0.60400390625
+        }
+      ]
+    },
+    {
+      "U": 16,
+      "mode": "heads",
+      "curve": [
+        {
+          "n": 16,
+          "mean": 0.59033203125,
+          "shifted": 0.50244140625,
+          "worst": 0.44375,
+          "minSeed": 0.5625,
+          "maxSeed": 0.63134765625
+        },
+        {
+          "n": 64,
+          "mean": 0.7396484375,
+          "shifted": 0.498828125,
+          "worst": 0.6296875,
+          "minSeed": 0.72607421875,
+          "maxSeed": 0.75634765625
+        },
+        {
+          "n": 256,
+          "mean": 0.91640625,
+          "shifted": 0.4998046875,
+          "worst": 0.8296875,
+          "minSeed": 0.904296875,
+          "maxSeed": 0.92041015625
+        },
+        {
+          "n": 512,
+          "mean": 0.9876953125,
+          "shifted": 0.4982421875,
+          "worst": 0.9640625,
+          "minSeed": 0.97900390625,
+          "maxSeed": 0.99169921875
+        }
+      ]
+    },
+    {
+      "U": 16,
+      "mode": "independent",
+      "curve": [
+        {
+          "n": 16,
+          "mean": 0.76865234375,
+          "shifted": 0.50263671875,
+          "worst": 0.6671875,
+          "minSeed": 0.76025390625,
+          "maxSeed": 0.78271484375
+        },
+        {
+          "n": 64,
+          "mean": 0.94140625,
+          "shifted": 0.4990234375,
+          "worst": 0.8734375,
+          "minSeed": 0.935546875,
+          "maxSeed": 0.9462890625
+        },
+        {
+          "n": 256,
+          "mean": 0.99951171875,
+          "shifted": 0.49853515625,
+          "worst": 0.99375,
+          "minSeed": 0.9990234375,
+          "maxSeed": 1
+        },
+        {
+          "n": 512,
+          "mean": 0.99990234375,
+          "shifted": 0.49892578125,
+          "worst": 0.9984375,
+          "minSeed": 0.99951171875,
+          "maxSeed": 1
+        }
+      ]
+    }
+  ]
+}
